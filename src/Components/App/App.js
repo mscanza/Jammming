@@ -8,10 +8,12 @@ import Spotify from '../../util/Spotify';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = 
-    {searchResults: [{name: 'Michael', artist: 'Michael Scanza', album: 'Trumpet Heroes', id: 12345},{name: 'Joseph', artist: 'Joseph', album: 'Ukelele Heroes', id: 123465},{name: 'Steve', artist: 'Steve guitar', album: 'Guitar Heroes', id: 19345}],
+    this.state = {
+    searchResults: [],
     playlistName: 'My new playlist',
-    playlistTracks: [{name: 'Michael', artist: 'Michael Scanza', album: 'Trumpet Heroes', id: 12345}]};
+    playlistTracks: []
+  };
+
     this.addTrack = this.addTrack.bind(this);
     this.removeTrack = this.removeTrack.bind(this);
     this.updatePlaylistName = this.updatePlaylistName.bind(this);
