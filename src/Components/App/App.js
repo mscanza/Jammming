@@ -47,7 +47,7 @@ savePlaylist() {
 }
 
 search(term) {
-  Spotify.search(term).then(results => this.setState({searchResults: results}))
+  Spotify.search(term).then(results => this.setState({searchResults: results}));
 }
 
   render() {
