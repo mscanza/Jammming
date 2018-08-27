@@ -2,7 +2,7 @@ let accessToken;
 let expiresIn;
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const clientId = '7e76f7a3ab7a4f0fb93dcff59d4bd40d';
-const redirectUri = 'http://ms_jammming.surge.sh/';
+const redirectUri = 'http://mscanza_jammming.surge.sh/';
 
 const Spotify = {
 
