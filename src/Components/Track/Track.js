@@ -17,7 +17,6 @@ removeTrack() {
     this.props.onRemove(this.props.track);
 }
 
-
 renderAction() {
     if (this.props.isRemoval) {
         return <a className="Track-action" onClick={this.removeTrack}>-</a>;
@@ -26,6 +25,8 @@ renderAction() {
     }
 }
 
+
+
   
 
     render() {
@@ -33,7 +34,7 @@ renderAction() {
             <div className="Track">
                 <div className="Track-information">
                   <h3>{this.props.track.name}</h3>
-                    <p>{this.props.track.artist} | {this.props.track.album}</p>
+                    <p>{this.props.track.artist} | {this.props.track.album} | <span id="popularity" style={Number(this.props.track.popularity) >= 60 ? {color: 'lime'} : Number(this.props.track.popularity) >= 50 ? {color: 'orange'} : {color: 'red'}}>{Number(this.props.track.popularity)}</span></p>
                 </div>
                 {this.renderAction()}
             </div>
@@ -42,3 +43,4 @@ renderAction() {
 }
 
 export default Track;
+

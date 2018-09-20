@@ -35,3 +35,7 @@
   .SearchBar a:hover {
     background-color: rgba(108, 65, 233, .7);
   }
+
+  .SearchBar a:active {
+    background-color: rgba(108, 65, 233, .7);
+  }

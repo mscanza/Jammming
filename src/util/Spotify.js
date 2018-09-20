@@ -2,8 +2,7 @@ let accessToken;
 let expiresIn;
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const clientId = '7e76f7a3ab7a4f0fb93dcff59d4bd40d';
-const redirectUri = 'http://mscanza_jammming.surge.sh/';
-
+const redirectUri = 'http://mscanza-jammming-final.surge.sh/';
 const Spotify = {
 
 
@@ -44,7 +43,8 @@ const Spotify = {
                     name: track.name,
                     artist: track.artists[0].name,
                     album: track.album.name,
-                    uri: track.uri
+                    uri: track.uri,
+                    popularity: track.popularity
                     }
                 })
             }
